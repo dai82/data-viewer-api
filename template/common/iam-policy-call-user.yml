@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Make IAM Poricy For Call Exec User
+
+# 実行時指定の引数を渡す時に利用する
+Parameters:
+  MyGroup:
+    Description: which group attach this policy.
+    Type: String
+    Default: call-group
+  MyIP:
+    Description: MyPC's IP Adress.
+    Type: String
+    Default: 123.123.123.123
+
+Resources:
+  SSMAccessOnlyMyPc:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: SSMAccessOnlyMyPc
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Action:
+              - 'ssm:*'
+            Resource: '*'
+            Condition:
+              IpAddress:
+                'aws:SourceIp': !Join ['/', [!Ref MyIP, '32']]
+      Groups:
+        - !Ref MyGroup

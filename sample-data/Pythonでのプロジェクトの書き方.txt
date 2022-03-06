@@ -1,0 +1,13 @@
+【参考】
+* requirements.txt(package.json)の作成方法
+  - https://takazawa.github.io/hobby/pipreqs/
+  - encodingしないと失敗する
+    * pipreqs --encoding UTF8 .
+
+* pipenvというのがいいらしい
+  - https://www.kabuku.co.jp/developers/python-pipenv-graph
+  - 【手順】※途中
+    1.pipenvをインストール
+  　  ・pip install --upgrade pip
+    　・pip install pipenv
+    2.

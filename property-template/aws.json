@@ -1,0 +1,7 @@
+{
+  "ExecKeyPath": "/develop/exec/",
+  "AccessKey": "${AccessKey}",
+  "SecretKey": "${SecretKey}",
+  "Output": "json",
+  "Region": "ap-northeast-1"
+}

@@ -1,0 +1,8 @@
+{
+    "backup_file_dir": "C:\\workspaces\\git-dai82-repository\\data-viewer-api-private\\work\\backup\\file",
+    "config_file_path": "C:\\workspaces\\git-dai82-repository\\data-viewer-api-private\\setting.json",
+    "config_name": "setting.json",
+    "log_level": 10,
+    "name": "Data Viewer",
+    "root_directory": "C:\\workspaces\\git-dai82-repository\\data-viewer-api-private"
+}
